@@ -1,15 +1,17 @@
+array = [1,2,3]
+newArr = []
+
 def square_array(array)
 counter = 0
+newArray = []
 
   while counter < array.length do
-    return array[(counter ** 2)]
+    newArray << array[counter] ** 2
     counter += 1
   end
+  return newArray
 end
 
-# new_array = []
-# array.each do |integer|
-# new_array << integer ** 2
-# end
-# return new_array
-# end
+# invoking the method
+square_array(array)
+# => [1,4,9])
